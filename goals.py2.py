@@ -1,22 +1,6 @@
-#create an empty list 
-goals = []
-
-#append the goals
-n = int(input("how many goals do you want? "))
-for i in range(5):
-    new = input("Add a new goal to the list: ")
-    goals.append(new)
-
-print(goals)
-#edit an item
-i = input('Which goal do you want to change? ')
-# convert i from string to the integer
-i = int(i)
-goals[i-1] = input('Enter a new goal: ')
-
-print(goals)
-
-#delete an item
-i = int(input('Which goal do you want to delete? '))
-del goals[i-1]
-print(goals)
+colorlist = ['red', 'blue', 'yellow', 'green', 'purple']
+print("You can print one color. Index numbers go from 0 to ", len(colorlist) - 1,)     
+i = int(input("Which color do you want to print "))
+while i >= len(colorlist):
+    i = int(input("Enter correct number: "))
+print(colorlist[i])
